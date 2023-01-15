@@ -350,6 +350,7 @@ header {
     font-weight: 500;
     color: var(--darkgray);
 }
+
 .email {
     font-size: 17px;
     font-weight: 500;
@@ -372,17 +373,19 @@ header {
     gap: 7px;
     margin-bottom: 20px;
 }
-input{
-border: 1px solid var(--orange);
-font-size: 17px;
-font-weight: 500;
-border-radius: 8px;
-padding: 9px;
-color: var(--darkgray);
-/* border-style: none; */
+
+input {
+    border: 1px solid var(--orange);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 9px;
+    color: var(--darkgray);
+    /* border-style: none; */
 
 }
-textarea{
+
+textarea {
     font-size: 17px;
     font-weight: 500;
     border: 1px solid var(--orange);
@@ -390,7 +393,8 @@ textarea{
     border-radius: 8px;
     color: var(--darkgray);
 }
-.submit{
+
+.submit {
     background-color: #FF900E;
     color: white;
     font-size: 20px;
@@ -412,4 +416,70 @@ textarea{
     font-weight: 400;
     color: var(--secondary-color);
     padding: 39px;
+}
+
+/*-------media queries------- */
+@media only screen and (max-width:576px) {
+    .feature-images {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    .features-container,
+    .features-list-container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .features-container{
+        gap: 20px;
+    }
+    .features-list-container {
+        gap: 20px;
+    }
+    .features-list-description{
+        margin-bottom: 0;
+        padding-left: 20px;
+    }
+    .feature-info {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .author-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .author-image{
+        text-align: center;
+    }
+    .author-button {
+        position: static;
+        padding: 15px 30px;
+    }
+    .author-button .span-first {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .author-button .span-sec{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .achievements-section{
+        margin-left: 0;
+        padding: 0 10px 0 20px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .achievements-container{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    .sponsors-container{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .sponsors-section{
+        margin-top: 60px;
+    }
 }
