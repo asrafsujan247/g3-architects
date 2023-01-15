@@ -187,6 +187,7 @@ header {
     font-size: 20px;
     font-weight: 600;
     color: var(--primary-black);
+    margin-bottom: 10px;
 }
 
 .list-description {
@@ -285,38 +286,119 @@ header {
     font-weight: 600;
     color: var(--darkgray);
 }
+
 /* sponsors section */
-.sponsors-section{
+.sponsors-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 180px;
 }
-.sponsor-info{
+
+.sponsor-info {
     text-align: center;
 }
-.sponsors-title{
+
+.sponsors-title {
     font-size: 45px;
     font-weight: 700;
     color: var(--primary-black);
     margin-bottom: 24px;
 }
-.sponsors-description{
+
+.sponsors-description {
     font-size: 16px;
     font-weight: 400;
     color: var(--darkgray);
     margin-bottom: 50px;
 }
-.sponsors-container{
+
+.sponsors-container {
     display: flex;
     align-items: center;
     gap: 155px;
 }
-.sponsors-container img{
+
+.sponsors-container img {
     filter: grayscale(100%);
 }
+
+/* contact styles */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 65%;
+    margin: 80px auto 0px;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 30px auto 30px;
+}
+
+.contact-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-sub-title {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--darkgray);
+}
+.email {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--darkgray);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.contact-image img {
+    width: 300px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+input{
+border: 1px solid var(--orange);
+font-size: 17px;
+font-weight: 500;
+border-radius: 8px;
+padding: 9px;
+color: var(--darkgray);
+/* border-style: none; */
+
+}
+textarea{
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid var(--orange);
+    padding: 7px;
+    border-radius: 8px;
+    color: var(--darkgray);
+}
+.submit{
+    background-color: #FF900E;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 /* footer styles */
-.footer-container{
+.footer-container {
     background-color: var(--background);
     width: 75%;
     text-align: center;
@@ -324,7 +406,8 @@ header {
     border-style: none;
     border-radius: 8px;
 }
-.copyright-info{
+
+.copyright-info {
     font-size: 20px;
     font-weight: 400;
     color: var(--secondary-color);
