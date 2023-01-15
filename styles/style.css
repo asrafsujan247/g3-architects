@@ -330,7 +330,7 @@ header {
     align-items: center;
     background-color: var(--background);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    width: 65%;
+    width: 60%;
     margin: 80px auto 0px;
 }
 
@@ -360,11 +360,11 @@ header {
 .contact-detail {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 130px;
 }
 
 .contact-image img {
-    width: 300px;
+    width: 350px;
 }
 
 .inputs {
@@ -406,7 +406,7 @@ textarea {
     background-color: var(--background);
     width: 75%;
     text-align: center;
-    margin: 130px auto 200px;
+    margin: 130px auto 80px;
     border-style: none;
     border-radius: 8px;
 }
@@ -420,6 +420,31 @@ textarea {
 
 /*-------media queries------- */
 @media only screen and (max-width:576px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 35px;
+        padding-top: 25px;
+        align-items: flex-start;
+        margin-left: 25px;
+    }
+    .nav-info{
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 18px;
+    }
+    .banner-container{
+        margin-top: 30px;
+    }
+    .banner-description{
+        padding: 10px;
+    }
+    .banner-title{
+        font-size: 55px;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+
     .feature-images {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
@@ -430,16 +455,20 @@ textarea {
         flex-direction: column;
         margin-top: 30px;
     }
-    .features-container{
+
+    .features-container {
         gap: 20px;
     }
+
     .features-list-container {
         gap: 20px;
     }
-    .features-list-description{
+
+    .features-list-description {
         margin-bottom: 0;
         padding-left: 20px;
     }
+
     .feature-info {
         text-align: center;
         padding: 20px;
@@ -449,37 +478,67 @@ textarea {
         width: 100%;
         margin-bottom: 20px;
     }
-    .author-image{
+
+    .author-image {
         text-align: center;
     }
+
     .author-button {
         position: static;
         padding: 15px 30px;
     }
+
     .author-button .span-first {
         font-size: 25px;
         font-weight: 600;
     }
-    .author-button .span-sec{
+
+    .author-button .span-sec {
         font-size: 20px;
         font-weight: 500;
     }
-    .achievements-section{
+
+    .achievements-section {
         margin-left: 0;
         padding: 0 10px 0 20px;
         margin-top: 50px;
         margin-bottom: 60px;
     }
-    .achievements-container{
+
+    .achievements-container {
         flex-direction: column;
         align-items: center;
-        gap:20px;
+        gap: 20px;
     }
-    .sponsors-container{
+
+    .sponsors-container {
         flex-direction: column;
         gap: 60px;
     }
-    .sponsors-section{
+
+    .sponsors-section {
         margin-top: 60px;
     }
+
+    .contact-container {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-image img {
+        width: 220px;
+    }
+
+    .footer-container {
+        width: 100%;
+        border-radius: 0;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
 }
