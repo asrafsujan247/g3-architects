@@ -226,7 +226,7 @@ header {
 
 /* achievement section styles */
 .achievements-section {
-   
+
     /* margin: 50px auto;
     margin-top: 130px;
      */
@@ -269,6 +269,11 @@ header {
     transform: scale(1.15);
 }
 
+.achievements:hover .number,
+.achievements:hover .achievement {
+    color: white;
+}
+
 .number {
     font-size: 45px;
     font-weight: 600;
@@ -280,8 +285,48 @@ header {
     font-weight: 600;
     color: var(--darkgray);
 }
-
-.achievements:hover .number,
-.achievements:hover .achievement {
-    color: white;
+/* sponsors section */
+.sponsors-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+.sponsor-info{
+    text-align: center;
+}
+.sponsors-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--primary-black);
+    margin-bottom: 24px;
+}
+.sponsors-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--darkgray);
+    margin-bottom: 50px;
+}
+.sponsors-container{
+    display: flex;
+    align-items: center;
+    gap: 155px;
+}
+.sponsors-container img{
+    filter: grayscale(100%);
+}
+/* footer styles */
+.footer-container{
+    background-color: var(--background);
+    width: 75%;
+    text-align: center;
+    margin: 130px auto 200px;
+    border-style: none;
+    border-radius: 8px;
+}
+.copyright-info{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    padding: 39px;
 }
